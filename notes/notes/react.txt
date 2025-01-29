@@ -1,0 +1,27 @@
+C:\Users\sahan_0nzxxla\OneDrive\Desktop\react
+
+command:
+1. create a folder in desktop
+2. in that folder go to address and type cmd and then it will take u to cmd prompt
+
+Now v r in command prompt
+command:
+1. node -v => check node version
+2. npm -v => check version of npm
+3. creating react app => npx create-react-act <app name>
+4. npm start
+      suppose to open ur app at port 3000(default port), but not opened so
+
+To make it work
+1.open ur react folder
+        u will see ur app folder got created
+To open my app in vs code
+1.go to same above cmd prompt
+2. cd demo
+3. code .
+
+In vs code 
+1.go to treminal
+2.go to new terminal
+3.npm start
+4.npm i web - vitals

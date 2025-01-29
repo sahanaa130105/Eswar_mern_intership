@@ -1,0 +1,217 @@
+C:\Users\sahan_0nzxxla\AppData\Local\Programs\mongosh\
+
+
+
+
+✨Comments
+------------
+👉test> use aiml
+switched to db aiml
+
+
+👉aiml> use employee
+switched to db employee
+
+
+👉employee> show dbs
+admin       40.00 KiB
+config     108.00 KiB
+employees    8.00 KiB
+local       40.00 KiB
+
+
+👉employee> db.emp.insert({empname:"Sahanaa"})
+DeprecationWarning: Collection.insert() is deprecated. Use insertOne, insertMany, or bulkWrite.
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('67932ca1e9d2932eeccb0ce2') }
+}
+employee> db.emp.insert({empname:"Pavedha"})
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('67932d22e9d2932eeccb0ce3') }
+}
+
+
+
+👉employee> db.emp.insert({empname:"Jayarani",contact:12345})
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('67932ddfe9d2932eeccb0ce4') }
+}
+employee> db.emp.insert({empname:"Kanishka",contact:98764})
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('67932e0ce9d2932eeccb0ce5') }
+}
+
+
+
+👉employee> db.emp.insertOne({empname:"Kaarthika",contact:98764,salary:500000.00})
+{
+  acknowledged: true,
+  insertedId: ObjectId('67932e3fe9d2932eeccb0ce6')
+}
+
+
+
+👉employee> db.emp.find()
+[
+  { _id: ObjectId('67932ca1e9d2932eeccb0ce2'), empname: 'Sahanaa' },
+  { _id: ObjectId('67932d22e9d2932eeccb0ce3'), empname: 'Pavedha' },
+  {
+    _id: ObjectId('67932ddfe9d2932eeccb0ce4'),
+    empname: 'Jayarani',
+    contact: 12345
+  },
+  {
+    _id: ObjectId('67932e0ce9d2932eeccb0ce5'),
+    empname: 'Kanishka',
+    contact: 98764
+  },
+  {
+    _id: ObjectId('67932e3fe9d2932eeccb0ce6'),
+    empname: 'Kaarthika',
+    contact: 98764,
+    salary: 500000
+  }
+]
+
+
+
+
+👉employee> db.emp.insertOne({empname:"Kaarthika",contact:98764,salary:500000.00 ,hobbie:{game:"cricket"}})
+{
+  acknowledged: true,
+  insertedId: ObjectId('6793311ee9d2932eeccb0ce7')
+}
+
+
+
+
+
+
+👉employee> db.emp.insertMany([{name:"Sri",age:9},{name:"Madunika",age:3},{name:"Nandha",age:20},{name:"Aswin",age:19} ,{name:"Dheekshith",age:19}])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6793325fe9d2932eeccb0ce8'),
+    '1': ObjectId('6793325fe9d2932eeccb0ce9'),
+    '2': ObjectId('6793325fe9d2932eeccb0cea'),
+    '3': ObjectId('6793325fe9d2932eeccb0ceb'),
+    '4': ObjectId('6793325fe9d2932eeccb0cec')
+  }
+}
+
+
+
+
+👉employee> db.emp.find()
+[
+  { _id: ObjectId('67932ca1e9d2932eeccb0ce2'), empname: 'Sahanaa' },
+  { _id: ObjectId('67932d22e9d2932eeccb0ce3'), empname: 'Pavedha' },
+  {
+    _id: ObjectId('67932ddfe9d2932eeccb0ce4'),
+    empname: 'Jayarani',
+    contact: 12345
+  },
+  {
+    _id: ObjectId('67932e0ce9d2932eeccb0ce5'),
+    empname: 'Kanishka',
+    contact: 98764
+  },
+  {
+    _id: ObjectId('67932e3fe9d2932eeccb0ce6'),
+    empname: 'Kaarthika',
+    contact: 98764,
+    salary: 500000
+  },
+  {
+    _id: ObjectId('6793311ee9d2932eeccb0ce7'),
+    empname: 'Kaarthika',
+    contact: 98764,
+    salary: 500000,
+    hobbie: { game: 'cricket' }
+  },
+  { _id: ObjectId('6793325fe9d2932eeccb0ce8'), name: 'Sri', age: 9 },
+  {
+    _id: ObjectId('6793325fe9d2932eeccb0ce9'),
+    name: 'Madunika',
+    age: 3
+  },
+  {
+    _id: ObjectId('6793325fe9d2932eeccb0cea'),
+    name: 'Nandha',
+    age: 20
+  },
+  { _id: ObjectId('6793325fe9d2932eeccb0ceb'), name: 'Aswin', age: 19 },
+  {
+    _id: ObjectId('6793325fe9d2932eeccb0cec'),
+    name: 'Dheekshith',
+    age: 19
+  }
+]
+
+
+
+
+👉employee> db.emp.find({empname:"Kaarthika"})
+[
+  {
+    _id: ObjectId('67932e3fe9d2932eeccb0ce6'),
+    empname: 'Kaarthika',
+    contact: 98764,
+    salary: 500000
+  },
+  {
+    _id: ObjectId('6793311ee9d2932eeccb0ce7'),
+    empname: 'Kaarthika',
+    contact: 98764,
+    salary: 500000,
+    hobbie: { game: 'cricket' }
+  }
+]
+
+
+
+
+
+👉employee> db.emp.updateOne({empname:"Kaarthika"},{$set:{contact:65412}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+
+
+
+👉array
+Computer> db.Laptop.insertOne({Variant:["v10","v11","v12"]})
+{
+  acknowledged: true,
+  insertedId: ObjectId('67933c89e9d2932eeccb0d0c')
+}
+
+
+❤️update array
+db.customers.updateOne({name:'Arjun Reddy'},{$set:{contactNo:[5987452368,8536547859]}})
+
+db.customers.updateMany({name:{$in:['Neha Singh','Vikram Sharma','Arjun Gupta']}},{$set:{hobbies:['travel','sports']}})
+
+db.customers.updateMany({name:{$in:['Meera Iyer','Nidhi Kapoor','Bharat Rao']}},{$set:{hobbies:['cooking','sports']}})
+
+db.products.find({price:{$eq:80000}})
+
+db.products.find({price:{$gt:80000}})
+
+db.products.findOne({price:{$gt:80000}})
+
+
+db.products.find({price:{$gte:80000}})
+
+db.products.find({price:{$lt:80000}})
+
+db.products.find({price:{$lte:80000}})
+
+db.products.find({price:{$ne:80000}})

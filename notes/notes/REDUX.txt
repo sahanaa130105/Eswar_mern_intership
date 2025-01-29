@@ -1,0 +1,37 @@
+***********REDUX**********
+
+👉INSTALLATION
+      npm i @reduxjs/toolkit react-redux   
+
+            reduxjs/toolkit  => redux library          
+            react-redux   => package(linkage btw react and redux)
+
+=>To create redux store and all they given one library that is reduxjs/toolkit
+
+👉ARCHITECTURE
+
+router
+routes
+route
+path
+
+👉INSTALLATION
+    npm i react-router-dom
+
+
+*********Setup Redux***********
+
+=> create 2 folder in src
+    .app              -for store
+    .slices           -for slice
+=> inside slices folder create a file called "userslice.js"
+=> userslice.js
+    import {createSlice} from '@reduxjs/toolkit';
+
+=> inside app folder create a file called "store.js"
+=> store.js
+      👉explanation:
+            userInfo is the key for reducers and userRender is the name we give for reducer actions we get from userslice.js   
+
+
+=>useSelector hoOk - TO ACCESS DATA FROM REDEX
