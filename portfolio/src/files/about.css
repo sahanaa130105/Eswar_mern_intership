@@ -1,0 +1,342 @@
+/* Container Styling */
+.about-container {
+    background: linear-gradient(135deg, #ffffff, #fcd9d9);
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Header Section */
+  .about-header {
+    margin-bottom: 3rem;
+  }
+  
+  .about-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .about-title span {
+    color: #ec7b67;
+    background: linear-gradient(90deg, #ff9a8b, #ff6a88);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .about-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #555;
+    margin-top: 0.5rem;
+  }
+  
+  /* Content Section */
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  /* Text Section */
+  .about-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #444;
+    text-align: left;
+    padding: 1rem;
+    margin: auto;
+    max-width: 800px;
+  }
+  
+  /* Skills Section */
+  .skills-section {
+    margin-top: 3rem;
+    background: linear-gradient(135deg, #fcd9d9, #ffffff);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skills-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .skills-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #ec7b67, #ff9a8b);
+    margin: 0.5rem auto 0;
+    border-radius: 5px;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .skill-card {
+    background: linear-gradient(135deg, #ec7b67, #ff9a8b);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .about-title {
+      font-size: 2.5rem;
+    }
+  
+    .skills-grid {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+  
+    .about-text {
+      font-size: 1rem;
+    }
+  }
+  /* Certificates Section */
+.certificates-section {
+  margin-top: 3rem;
+  background: linear-gradient(135deg, #fcd9d9, #ffffff);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.certificates-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+}
+
+.certificates-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #ec7b67, #ff9a8b);
+  margin: 0.5rem auto 0;
+  border-radius: 5px;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.certificate-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.certificate-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.certificate-info {
+  padding: 1rem;
+  text-align: left;
+}
+
+.certificate-info h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.certificate-info p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Modal Styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 15px;
+  padding: 2rem;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.close-modal-btn {
+  background: #ff6a88;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.close-modal-btn:hover {
+  background: #ec7b67;
+}
+/* Skills Section Container */
+.skills {
+  background: linear-gradient(145deg, #ffffff, #f8b8b8); /* Subtle gradient for depth */
+  color: #e7ebf0;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Elevated shadow for a premium look */
+  font-family: 'Roboto', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.new-h2 {
+  color: black;
+}
+
+.skills:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Section Title */
+.skills h1 {
+  color: #e7ebf0;
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-bottom: 2px solid rgba(249, 198, 198, 0.2); /* Thin underline for emphasis */
+  padding-bottom: 0.5rem;
+}
+
+/* Unordered List */
+.skills ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap; /* Responsive, flexible layout */
+  justify-content: center;
+  gap: 1rem; /* Space between items */
+}
+
+/* List Items */
+.skills li {
+  background: linear-gradient(135deg, #ff8b8b, #f7f7f7); /* Modern gradient */
+  color: #fff;
+  margin: 0.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(255, 62, 62, 0.2);
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skills li:hover {
+  background: linear-gradient(135deg, #f18d8d, #e35656); /* Highlighted gradient on hover */
+  transform: scale(1.05); /* Subtle zoom effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Percentage Styling */
+.skills .percentage {
+  color: black; /* Highlight percentage in black */
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills {
+    padding: 1.5rem;
+  }
+
+  .skills h1 {
+    font-size: 2rem;
+  }
+
+  .skills ul {
+    gap: 0.8rem;
+  }
+
+  .skills li {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+  }
+}

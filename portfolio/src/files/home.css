@@ -1,0 +1,101 @@
+.hero-section {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: flex-start; /* Keep content aligned */
+    height: 70vh;
+    padding: 4rem; /* Add padding to shift the content slightly from the edge */
+    gap: 3rem;
+    background-color: #ffffff; /* Full white background */
+    color: #4d4d4d; /* Neutral dark gray text for contrast */
+}
+
+.image-container {
+    margin-left: auto; /* Push the image to the right */
+    display: flex;
+    align-items: center; /* Center the image vertically with text */
+}
+
+
+.text-content {
+    max-width: 50%;
+    text-align: left;
+    margin-left: 2rem; /* Add margin to push the content slightly inwards */
+}
+
+.text-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: #4d4d4d; /* Neutral dark gray for text */
+}
+
+.text-content h1 span {
+    color: #ec7b67; /* Pastel orange highlight */
+}
+
+.text-content h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: #6d6875; /* Soft lavender for headings */
+}
+
+.text-content h2 span {
+    color: #7b6ec7; /* Pastel pink highlight */
+}
+
+.text-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #6d6875; /* Soft lavender for paragraph text */
+    font-style: italic;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.social-icons a {
+    font-size: 2rem;
+    color: #9a8c98; /* Muted pastel purple */
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #c3aed6; /* Light pastel purple on hover */
+}
+
+.profile-picture {
+    width: 13cm; /* Adjust the width as needed */
+    height: 13cm; /* Adjust the height as needed */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the area */
+    margin-top: 2rem; /* Add some space above the image */
+    border: 10px solid #ffb5a7; /* Pastel coral border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.buttons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.contact-btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.hire-btn {
+    background-color: #ec7b67; /* Pastel coral */
+    color: #ffffff; /* White text */
+}
+
+

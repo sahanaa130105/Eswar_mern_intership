@@ -1,0 +1,151 @@
+body {
+  background-color: #ffffff; /* White background */
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  color: #333333; /* Dark gray for text */
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: #ffffff; /* Match the body background */
+}
+
+.text-content {
+  max-width: 50%;
+  text-align: left;
+}
+
+.text-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  color: #000000; /* Black text for headers */
+}
+
+.text-content h1 span {
+  color: #007bff; /* Attractive blue highlight */
+}
+
+.text-content h2 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #444444; /* Slightly darker gray for subtext */
+}
+
+.text-content h2 span {
+  color: #007bff; /* Matching blue highlight */
+}
+
+.text-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #666666; /* Medium gray for paragraph text */
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: #007bff; /* Blue for social icons */
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.hire-btn,
+.contact-btn {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for buttons */
+}
+
+.hire-btn {
+  background-color: #007bff; /* Blue button */
+  color: #ffffff; /* White text */
+}
+
+.contact-btn {
+  background-color: transparent;
+  border: 2px solid #007bff; /* Blue border */
+  color: #007bff; /* Blue text */
+}
+
+.hire-btn:hover {
+  transform: scale(1.05);
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.contact-btn:hover {
+  transform: scale(1.05);
+  background-color: #007bff; /* Fill blue on hover */
+  color: #ffffff; /* White text */
+}
+
+
+nav {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  justify-content: center;
+  background-color: #f8f9fa; /* Light gray for navbar */
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Navbar shadow */
+}
+
+nav a {
+  text-decoration: none;
+  color: #007bff; /* Blue text */
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px 10px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  border-color: #ec7b67; /* Add blue border on hover */
+}
+
+.hi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.hi a {
+  text-decoration: none;
+  color: #ec7b67; /* Blue text */
+  font-weight: bold;
+  font-size: 25px;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.hi a:hover {
+  color: #861c09; /* Darker blue on hover */
+}
